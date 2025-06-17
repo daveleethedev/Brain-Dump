@@ -1,6 +1,24 @@
+@font-face {
+  font-family: 'jurandir';
+  src: url('fonts/Agrandir-Text') format('truetype');
+}
+
+*{
+    font-family: 'jurandir', sans-serif;
+    font-weight: 700;
+
+}
+
+h1 > a{
+    text-decoration: none;
+}
+
 body{
     margin: 0px;
     overflow: hidden;
+    background-color: #202020;
+    color: white;
+
 }
 nav{
     background-color: rgb(243, 255, 251);
@@ -54,15 +72,17 @@ nav{
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
-    color: rgb(113, 31, 190);
-    text-shadow: 1px 1px  rgb(59, 45, 210);
+    color: rgb(147, 151, 226);
+    text-shadow: 1px 1px  rgb(13, 6, 94);
 }
 
 #container{
+background-color: #5f5f5f55;
+color: #000;
 margin: auto;
 padding: 10px;
 width: 800px;
-height: 600px;
+height: 760px;
 border-width: 0px 8px 0px 8px;
 border-color: black;
 border-style: solid;
@@ -81,8 +101,8 @@ overflow-x: hidden;
     background-color: rgb(254, 254, 254);
     padding: 10px;
 
-    border-width: 3px 3px 7px 3px;
-    border-color: black;
+    border-width: 3px 7px 9px 3px;
+    border-color: rgb(0, 0, 0);
     border-style: solid;
     
 }
