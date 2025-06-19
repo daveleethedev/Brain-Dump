@@ -1,15 +1,11 @@
-@font-face {
-  font-family: 'jurandir';
-  src: url('fonts/Agrandir-Text') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
 *{
-    font-family: 'jurandir', sans-serif;
+    font-family: "Pixelify Sans", sans-serif;
     font-weight: 700;
-
 }
 
-h1 > a{
+ a{
     text-decoration: none;
 }
 
@@ -18,43 +14,61 @@ body{
     overflow: hidden;
     background-color: #202020;
     color: white;
-
 }
+
 nav{
-    background-color: rgb(243, 255, 251);
+    background-color: #AEC446;
     padding: 10px;
     margin-left: 0px;
     display: flex;
     border-width: 0px 0px 10px 0px;
     border-color: black;
     border-style: solid;
-    width: 1550px;
-    
+
     & h1{
         font-size: 30px;
+        
+        & a{
+            color: #3c660e;
+        }
     }
 
     & h3{
         margin-top: 30px;
         margin-left: 20px;
+        margin-right: 30px;
         cursor: pointer;
+        font-size: 24px;
+
+        & a{
+            color: #3c660e;
+        }
     }
 
     & input, button{
-        height: 45px;
+        height: 60px;
         margin-top: 20px;
-        
+        border: 3px 3px 3px 10px;
+        border-color: #202020; 
     }
 
     & #searchbar {
-        margin-left: 700px;
-        border-radius: 9px 0px 0px 9px;
-        width: 250px;
+        margin-left: 800px;
+        padding: 10px;
+        font-size: larger;
+        border-radius: 10px 0px 0px 10px;
+        background-color: #6ebc1a;
+        width: 290px;
+      
+    }
+    #searchbar::placeholder{
+        color: #2c4a0b;
     }
 
     & #searchBtn{
         border-radius: 0px 9px 9px 0px;
-        background-color: rgb(217, 205, 228);
+        background-color: #6A953C;
+        width: 60px;
     }
 
 }
@@ -69,11 +83,11 @@ nav{
 }
 
 #topics-counter{
-    font-size: 22px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    font-family: "Pixelify Sans", sans-serif;
     font-weight: 900;
-    color: rgb(147, 151, 226);
-    text-shadow: 1px 1px  rgb(13, 6, 94);
+    color: #aac525;
+    text-shadow: 1px 1px  #6A953B;
 }
 
 #container{
@@ -87,18 +101,13 @@ border-width: 0px 8px 0px 8px;
 border-color: black;
 border-style: solid;
 overflow: scroll;
-overflow-x: hidden;
-
-
-
-
 }
 
 #post{
     width: 600px;
     margin: auto;
     margin-bottom: 20px;
-    background-color: rgb(254, 254, 254);
+    background-color: #AEC446;
     padding: 10px;
 
     border-width: 3px 7px 9px 3px;
@@ -107,6 +116,15 @@ overflow-x: hidden;
     
 }
 
+#topic-title{
+    font-size: 35px;
+    color: #202020;
+}
+
+#topic-prev{
+    font-size: 25px;
+    color: #202020;
+}
 
 /*Página Create :*/
     #thread-title , #edit-title{
@@ -129,7 +147,6 @@ textarea{
     margin-left: 30px;
     margin-top: 10px;
     color: black;
-
 }
 
 #postBtn{
@@ -150,4 +167,5 @@ textarea{
 text-align: center;
 width: 650px;
 margin: auto;
+color: #90d14b;
 }

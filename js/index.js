@@ -13,6 +13,7 @@ for(let i = 0; i < posts.length; i++ ){
                 <h2 id="topic-prev">${post.contentInput.slice(0, 20)}.....</h2>
                 <br>
                 <div id="postDate">Postado dia (${post.postDay}/${post.postMonth}/${post.postYear}) as ${post.postHour}:${post.postMinutes}</div>
+                <br>
                 <button onclick="abrirTopico(${i})">
                     👁️
                 </button>
@@ -81,7 +82,7 @@ searchButton.addEventListener("click", () => {
           <br>
           <div id="postDate">Postado dia (${post.postDay}/${post.postMonth}/${post.postYear}) às ${post.postHour}:${post.postMinutes}</div>
           <button onclick="abrirTopico(${posts.indexOf(post)})">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>
+              👁️
           </button>
           <button onclick="deletarPost('${post.titleInput}')">
               🗑️
