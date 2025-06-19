@@ -10,7 +10,7 @@ for(let i = 0; i < posts.length; i++ ){
         `
             <div id="post">
                 <h1 id="topic-title">${post.titleInput.slice(0, 30)}...</h1>
-                <h2 id="topic-prev">${post.contentInput.slice(0, 20)}.....</h2>
+                <h2 id="topic-prev">${post.contentInput.slice(0, 21)}.....</h2>
                 <br>
                 <div id="postDate">Postado dia (${post.postDay}/${post.postMonth}/${post.postYear}) as ${post.postHour}:${post.postMinutes}</div>
                 <br>
@@ -34,6 +34,8 @@ for(let i = 0; i < posts.length; i++ ){
         let adicionaTopico = main.appendChild(topic)
 
         }}
+
+        
         
 
 function abrirTopico(index){
@@ -45,7 +47,6 @@ function editarPost(index) {
   localStorage.setItem("editPost", index);
   window.location.href = "edit.html";
 }
-
 
 function deletarPost(title){
     const filtered = posts.filter(x => x.titleInput != title)

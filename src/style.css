@@ -48,19 +48,20 @@ nav{
     & input, button{
         height: 60px;
         margin-top: 20px;
-        border: 3px 3px 3px 10px;
-        border-color: #202020; 
     }
 
     & #searchbar {
         margin-left: 800px;
         padding: 10px;
         font-size: larger;
-        border-radius: 10px 0px 0px 10px;
-        background-color: #6ebc1a;
+        border-radius: 5px 0px 0px 15px;
+        border: 4px 4px 0px 34px;
+        border-color: #000;
         width: 290px;
-      
+        border: 2px;
+        
     }
+
     #searchbar::placeholder{
         color: #2c4a0b;
     }
@@ -69,6 +70,8 @@ nav{
         border-radius: 0px 9px 9px 0px;
         background-color: #6A953C;
         width: 60px;
+        border: 0px   ;
+        border-color: #000;
     }
 
 }
@@ -103,6 +106,10 @@ border-style: solid;
 overflow: scroll;
 }
 
+#container::-webkit-scrollbar{
+    width: 10px;
+}
+
 #post{
     width: 600px;
     margin: auto;
@@ -121,6 +128,10 @@ overflow: scroll;
     color: #202020;
 }
 
+#thread-title::placeholder, #edit-title::placeholder, textarea::placeholder{
+    color: #068110;
+}
+
 #topic-prev{
     font-size: 25px;
     color: #202020;
@@ -129,12 +140,15 @@ overflow: scroll;
 /*Página Create :*/
     #thread-title , #edit-title{
     width: 700px;
-    display: flex;
+ 
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-left: 30px;
     margin-top: 10px;
-    color: black;
+    font-size: 20px;
+    color: rgb(22, 87, 4);
+    background-color: #6eb91e;
+
 }
 
 
@@ -146,17 +160,21 @@ textarea{
     border-radius: 10px;
     margin-left: 30px;
     margin-top: 10px;
-    color: black;
+    font-size: 20px;
+    color: rgb(22, 87, 4);
+    background-color: #6eb91e;   
 }
+
 
 #postBtn{
     margin-top: 10px;
     margin-left: 700px;
     width: 60px;
     height: 30px;
-    background-color: rgb(83, 83, 210);
+    background-color: rgb(26, 132, 7);
     color: white;
     border-radius: 6px;
+    padding: 5px;
 }
 
 /*Página View: */
