@@ -20,3 +20,9 @@ function salvarEdicao() {
   localStorage.setItem("posts", JSON.stringify(posts))
   window.location.href = "index.html"
 }
+
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    salvarEdicao(); 
+  }
+});

@@ -35,7 +35,9 @@ for(let i = 0; i < posts.length; i++ ){
 
         }}
 
-        
+if (posts.length > 0){
+    document.getElementById("aviso").style.display = "none"
+}
         
 
 function abrirTopico(index){
@@ -70,7 +72,12 @@ searchButton.addEventListener("click", () => {
   );
 
   if (resultados.length === 0) {
-    container.innerHTML = "<p style='text-align:center;'>Nenhum tópico encontrado.</p>";
+    container.innerHTML = 
+    `
+    <p style='text-align:center; font-size:20px; color:#aac525;'>Nenhum tópico encontrado.</p> 
+    <br> 
+    <img style="width:180px;margin-left:310px;" src="images/sad frogone.png">
+    `;
     return;
   }
 
