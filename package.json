@@ -282,7 +282,10 @@
     "productName": "Brain Dump",
     "win": {
       "icon": "icon.ico",
-      "target": "nsis"
+      "target": [
+      "nsis",
+      "portable"
+    ]
     },
     "directories": {
       "buildResources": "assets",
