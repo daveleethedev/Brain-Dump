@@ -1,4 +1,4 @@
-/* From Uiverse.io by adamgiebl */ 
+/* From Uiverse.io by adamgiebl */
 button {
   background: #32b30a;
   font-family: inherit;
@@ -21,7 +21,6 @@ button:active {
   box-shadow: 0.05em 0.05em;
 }
 
-
 .tree-div {
   width: 100%;
   display: flex;
@@ -29,7 +28,6 @@ button:active {
   align-items: end;
   margin-top: -600px;
   margin-left: -140px;
-  
 }
 
 .tree {
@@ -77,7 +75,7 @@ button:active {
 .tree div.stem span {
   position: absolute;
   top: 110px;
- /* updated top value */
+  /* updated top value */
   left: calc(50% - 7.5px);
   width: 15px;
   height: 50%;

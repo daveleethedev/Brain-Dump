@@ -38,48 +38,48 @@ function createThread() {
       postMonth = "Nov";
       break;
     case 12:
-      postMonth = "Dez"
+      postMonth = "Dez";
 
     default:
-        console.log("Não existe esse mês não chefe")
+      console.log("Não existe esse mês não chefe");
   }
 
-  switch (postDay){
-    case 1: 
-    postDay = "01";
-    break;
-    
-    case 2: 
-    postDay = "02";
-    break;
+  switch (postDay) {
+    case 1:
+      postDay = "01";
+      break;
 
-    case 3: 
-    postDay = "03";
-    break;
+    case 2:
+      postDay = "02";
+      break;
 
-    case 4: 
-    postDay = "04";
-    break;
+    case 3:
+      postDay = "03";
+      break;
 
-    case 5: 
-    postDay = "05";
-    break;
+    case 4:
+      postDay = "04";
+      break;
 
-    case 6: 
-    postDay = "06";
-    break;
+    case 5:
+      postDay = "05";
+      break;
 
-    case 7: 
-    postDay = "07";
-    break;
+    case 6:
+      postDay = "06";
+      break;
 
-    case 8: 
-    postDay = "08";
-    break;
+    case 7:
+      postDay = "07";
+      break;
 
-    case 9: 
-    postDay = "09";
-    break;
+    case 8:
+      postDay = "08";
+      break;
+
+    case 9:
+      postDay = "09";
+      break;
   }
 
   let postYear = data.getFullYear();
@@ -91,9 +91,9 @@ function createThread() {
   let contentInput = document.getElementById("content-text").value.trim();
 
   if (!titleInput || !contentInput) {
-  alert("Preencha o título e o conteúdo antes de postar.");
-  return; // para a função aqui
-}
+    alert("Preencha o título e o conteúdo antes de postar.");
+    return; // para a função aqui
+  }
 
   const post = {
     titleInput,
@@ -109,12 +109,10 @@ function createThread() {
   currentValues.push(post);
   localStorage.setItem("posts", JSON.stringify(currentValues));
   window.open("index.html", "_self");
-
- 
 }
 
-document.addEventListener("keydown", function(event) {
+document.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
-    createThread(); 
+    createThread();
   }
 });

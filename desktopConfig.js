@@ -1,16 +1,20 @@
 const { app, BrowserWindow } = require('electron');
-const path = require('path');
+const remoteMain = require('@electron/remote/main');
+remoteMain.initialize();
 
 function createWindow() {
   const win = new BrowserWindow({
-    icon: path.join(__dirname, 'assets', 'icon.ico'),
-    frame:true
+    fullscreen: true,
+    frame: false,
+    resizable: false,
+    alwaysOnTop: true,
+    kiosk: true,
+    webPreferences: {
+      nodeIntegration: true,
+      contextIsolation: false,
+    }
   });
 
+  remoteMain.enable(win.webContents);
   win.loadFile('index.html');
-  win.maximize();
-  win.setMenu(null);
-   icon: path.join(__dirname, 'assets', 'icon.ico')
 }
-
-app.whenReady().then(createWindow);

@@ -21,6 +21,7 @@ nav {
   padding: 10px;
   margin-left: 0px;
   display: flex;
+  flex-direction: row;
   border-width: 0px 0px 10px 0px;
   border-color: rgb(35, 212, 35);
   border-style: solid;
@@ -52,7 +53,7 @@ nav {
   }
 
   & #searchbar {
-    margin-left: 800px;
+    margin-left:720px;
     padding: 10px;
     font-size: larger;
     border-radius: 5px 0px 0px 15px;
@@ -73,6 +74,10 @@ nav {
     border: 0px;
     border-color: #000;
   }
+}
+
+#closeButton{
+  margin-left: 20px;
 }
 
 #counter {

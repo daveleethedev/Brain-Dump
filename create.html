@@ -1,4 +1,4 @@
-    <!-- 
+<!-- 
 ______        ______                _                  _ 
 | ___ \       | ___ \              | |                | |
 | |_/ /_   _  | |_/ /__ _ _ __   __| | ___  _ __   ___| |
@@ -9,42 +9,53 @@ ______        ______                _                  _
        |___/                                              -->
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Braindump | Criar Tópico</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="shortcut icon" href="images/Randonetheone.png" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="shortcut icon"
+      href="images/Randonetheone.png"
+      type="image/x-icon"
+    />
+  </head>
 
-<body>
+  <body>
     <nav>
-        <h1>
-      <a href="index.html">Brain Dump</a>
+      <h1>
+        <a href="index.html">Brain Dump</a>
       </h1>
-        <h3><a href="index.html"> < Voltar</a></h3>
-
-        
+      <h3><a href="index.html"> < Voltar</a></h3>
     </nav>
     <main>
-        <img style="width: 350px; z-index: 0; position: fixed;" src="images/randone icon.png" alt="">
+      <img
+        style="width: 350px; z-index: 0; position: fixed"
+        src="images/randone icon.png"
+        alt=""
+      />
 
+      <div id="container">
+        <br />
+        <input
+          type="text"
+          name="title"
+          id="thread-title"
+          placeholder="Título do post"
+        />
+        <br />
+        <br />
 
-        
+        <textarea
+          name="content"
+          id="content-text"
+          placeholder="Conteúdo do tópico "
+        ></textarea>
 
-        <div id="container">
-                <br>
-               <input type="text" name="title" id="thread-title" placeholder="Título do post">
-                <br>
-                <br>
-            
-               <textarea name="content" id="content-text" placeholder="Conteúdo do tópico "></textarea>
-
-               <button id="postBtn" onclick="createThread()">Postar</button>
-                
-        </div>
+        <button id="postBtn" onclick="createThread()">Postar</button>
+      </div>
     </main>
 
     <script src="js/create.js"></script>
-</body>
+  </body>
 </html>

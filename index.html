@@ -12,17 +12,20 @@ ______        ______                _                  _
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Braindump | Home</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/uiverse.css">
+    <link rel="stylesheet" href="styles/cellVersion.css">
     <link rel="shortcut icon" href="images/Randonetheone.png" type="image/x-icon">
   </head>
   <body>
     <nav>
-      <h1>
-        <a href="#">Brain Dump</a>
+      <h1 id="title">
+        <a href="">Brain<span style="color: rgb(1, 86, 11);">Dump</span></a>
       </h1>
-      <h3><a href="create.html">Criar Tópico</a></h3>
+      <h3 id="createBtn"><a href="create.html">Criar Tópico</a></h3>
 
       <input
         type="search"
@@ -31,9 +34,10 @@ ______        ______                _                  _
         placeholder="Pesquisar Tópico..."
       />
       <button id="searchBtn">🔍</button>
+      <button id="closeButton" onclick="sairDoApp()">x</button>
     </nav>
     <main>
-      <img
+      <img class="rand"
         style="width: 350px; z-index: 0; position: fixed"
         src="images/Randonetheone.png"
         alt=""
@@ -89,5 +93,16 @@ ______        ______                _                  _
     </main>
 
     <script src="js/index.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/scroll.js"></script>
+
+    <script>
+      const { app } = require('@electron/remote');
+      function sairDoApp() {
+      app.quit();
+  }
+</script>
+
+</script>
   </body>
 </html>
