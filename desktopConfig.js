@@ -18,3 +18,4 @@ function createWindow() {
   remoteMain.enable(win.webContents);
   win.loadFile('index.html');
 }
+app.whenReady().then(createWindow);

@@ -4,7 +4,7 @@ const sr = ScrollReveal ({
     delay: 400,
     reset: true
 })
-sr.reveal(' .tree', {delay:200, origin:'top'})
+sr.reveal(' .tree-div', {delay:200, origin:'top'})
 sr.reveal(' .rand', {delay:200, origin:'top'})
 sr.reveal(' #counter', {delay:200, origin:'top'})
 sr.reveal(' #aviso', {delay:200, origin:'top'})
